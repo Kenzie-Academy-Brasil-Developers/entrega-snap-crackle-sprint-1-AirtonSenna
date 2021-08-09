@@ -20,3 +20,4 @@ function snapCrackle(maxValue) {
         return result
 }
 
+
