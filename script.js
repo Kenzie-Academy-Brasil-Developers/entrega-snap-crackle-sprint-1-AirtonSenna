@@ -4,7 +4,7 @@ function snapCrackle(maxValue) {
     for (let i = 1; i <= maxValue; i++) {
         
         if (i % 10 === 0) {
-            result += 'Crackle'
+            result += ' Crackle '
         } else if (i % 5 === 0) {
             result += 'SnapCrackle'
         } else if (i % 2 !== 0) {
