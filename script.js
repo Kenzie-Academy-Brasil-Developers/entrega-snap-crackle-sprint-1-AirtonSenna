@@ -4,15 +4,19 @@ function snapCrackle(maxValue) {
     for (let i = 1; i <= maxValue; i++) {
         
         if (i % 10 === 0) {
-            result += 'Crackle, '
+            result += 'Crackle'
         } else if (i % 5 === 0) {
-            result += 'SnapCrackle, '
+            result += 'SnapCrackle'
         } else if (i % 2 !== 0) {
-            result += 'Snap, '
+            result += 'Snap'
         } else {
-            result += i + ', '
+            result += ' ' + i + ' '
         }
+
+        
     }
-    return result
+        result = result.split(' ').join(', ')
+
+        return result
 }
 
