@@ -12,12 +12,15 @@ function snapCrackle(maxValue) {
         } else {
             result += ' ' + i + ' '
         }
-
+        
         
     }
-        result = result.split(' ').join(', ')
+        if (result[result.length - 1] === ' ') {
+            result = result.slice(0, result.length-1) 
+        }
+        
+        return result.split(' ').join(', ')
 
-        return result
 }
 
 
@@ -59,6 +62,9 @@ function snapCracklePrime(maxValue) {
         }
         
         
+    }
+    if (result[result.length - 1] === ' ') {
+        result = result.slice(0, result.length-1) 
     }
     
     return result.split(' ').join(', ')
